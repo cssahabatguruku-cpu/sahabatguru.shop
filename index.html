@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahabatGuru.shop - Pusat Kebutuhan Pembelajaran & Administrasi Guru</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e40af', // blue-800
+                        secondary: '#f59e0b', // amber-500
+                        dark: '#1e293b', // slate-800
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='#1e40af' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-slate-50 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="bg-primary text-white p-2 rounded-lg mr-2">
+                        <i class="fas fa-graduation-cap text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl text-primary tracking-tight">SahabatGuru<span class="text-secondary">.shop</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#beranda" class="text-slate-600 hover:text-primary font-medium transition">Beranda</a>
+                    <a href="#keunggulan" class="text-slate-600 hover:text-primary font-medium transition">Keunggulan</a>
+                    <a href="#produk" class="text-slate-600 hover:text-primary font-medium transition">Produk Kami</a>
+                    <a href="#pemesanan" class="bg-secondary hover:bg-amber-600 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-md shadow-amber-500/30">
+                        <i class="fab fa-whatsapp mr-2"></i>Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-32 pb-20 md:pt-40 md:pb-28 hero-pattern relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-primary font-semibold text-sm mb-6">
+                        <span class="relative flex h-3 w-3 mr-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                        </span>
+                        Solusi Administrasi Guru Terbaik 2024/2025
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight mb-6">
+                        Lengkapi Perangkat Ajar & Administrasi Anda <span class="text-primary">Lebih Mudah!</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0">
+                        Kami menyediakan CP, ATP, Prota, Promes, Modul Ajar, LKPD, hingga Dokumen Akreditasi ISP 2024 dan Dokumen Kepala Sekolah. Siap pakai dan mudah diedit.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#produk" class="bg-primary hover:bg-blue-900 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-lg shadow-blue-900/30 flex items-center justify-center">
+                            Lihat Katalog Produk
+                        </a>
+                        <a href="#pemesanan" class="bg-white border-2 border-slate-200 hover:border-secondary text-slate-700 px-8 py-3.5 rounded-full font-semibold text-lg transition flex items-center justify-center">
+                            Hubungi Admin
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden md:block">
+                    <!-- Decorative blob -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Guru mengajar" class="relative z-10 rounded-2xl shadow-2xl border-4 border-white transform hover:-translate-y-2 transition duration-500 object-cover h-[500px] w-full">
+                    
+                    <!-- Floating badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl z-20 flex items-center gap-4 animate-bounce">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-dark text-sm">Sesuai Kurikulum Merdeka</p>
+                            <p class="text-xs text-slate-500">Format Word & Excel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Mengapa Memilih SahabatGuru.shop?</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 transform -rotate-6">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Format Editable</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Semua file dalam format Microsoft Word, Excel, atau PPT yang sangat mudah disesuaikan dengan identitas sekolah Anda.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 transform rotate-6">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Super Lengkap</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mulai dari Modul Ajar, Prota Promes, Jurnal Pembelajaran, hingga dokumen Akreditasi dan administrasi Kepala Sekolah tersedia.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 transform -rotate-3">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Harga Terjangkau</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Kami menawarkan paket bundling yang jauh lebih hemat dibandingkan membuat atau membeli secara eceran. Bebas pusing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Katalog Produk & Paket</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Pilih paket perangkat pembelajaran atau dokumen administrasi yang sesuai dengan jenjang dan kebutuhan sekolah Anda.</p>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <!-- Kategori 1: Perangkat Ajar -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-dark mb-6 flex items-center">
+                    <i class="fas fa-layer-group text-primary mr-3"></i> Kategori 1: Perangkat Ajar Lengkap
+                </h3>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+                    
+                    <!-- Pack 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-primary relative transform hover:-translate-y-1 transition duration-300">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+                            BEST SELLER
+                        </div>
+                        <div class="bg-primary p-6 text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">PACK 1 (Super Lengkap)</h4>
+                            <div class="text-3xl font-extrabold mb-1">Rp 200.000</div>
+                            <p class="text-blue-200 text-sm">Semua Jenjang & Mapel</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-8 text-sm">
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Mencakup SD/MI, SMP/MTs, SMA/MA</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Semua Mata Pelajaran</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>CP, ATP, Prota, Promes</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Jurnal Pembelajaran & Modul Ajar</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>LKPD Terlengkap</span></li>
+                                <li class="flex items-start text-primary font-semibold"><i class="fas fa-gift text-secondary mt-1 mr-3"></i> <span>BONUS: Contoh File Dokumen Akreditasi</span></li>
+                            </ul>
+                            <a href="#pemesanan" onclick="selectProduct('Pack 1 (Semua Jenjang + Bonus) - Rp 200rb')" class="block w-full text-center bg-primary hover:bg-blue-800 text-white py-3 rounded-xl font-semibold transition">Pilih Paket Ini</a>
+                        </div>
+                    </div>
+
+                    <!-- Pack 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transform hover:-translate-y-1 transition duration-300">
+                        <div class="bg-slate-100 p-6 text-center text-dark">
+                            <h4 class="text-xl font-bold mb-2">PACK 2 (Menengah Atas)</h4>
+                            <div class="text-3xl font-extrabold mb-1 text-primary">Rp 100.000</div>
+                            <p class="text-slate-500 text-sm">SMP/MTs & SMA/MA</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-8 text-sm">
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Khusus Jenjang SMP/MTs & SMA/MA</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Semua Mata Pelajaran di Jenjang Tersebut</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>CP, ATP, Prota, Promes</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Jurnal Pembelajaran & Modul Ajar</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>LKPD Tersedia</span></li>
+                            </ul>
+                            <a href="#pemesanan" onclick="selectProduct('Pack 2 (SMP/MTs/SMA/MA) - Rp 100rb')" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 py-3 rounded-xl font-semibold transition mt-auto">Pilih Paket Ini</a>
+                        </div>
+                    </div>
+
+                    <!-- Pack 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transform hover:-translate-y-1 transition duration-300">
+                        <div class="bg-slate-100 p-6 text-center text-dark">
+                            <h4 class="text-xl font-bold mb-2">PACK 3 (Dasar)</h4>
+                            <div class="text-3xl font-extrabold mb-1 text-primary">Rp 50.000</div>
+                            <p class="text-slate-500 text-sm">SD / MI Saja</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-8 text-sm">
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Khusus Jenjang SD / MI</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Semua Mata Pelajaran SD/MI</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>CP, ATP, Prota, Promes</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Jurnal Pembelajaran & Modul Ajar</span></li>
+                                <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> <span>Lembar Kerja Peserta Didik (LKPD)</span></li>
+                            </ul>
+                            <a href="#pemesanan" onclick="selectProduct('Pack 3 (SD/MI) - Rp 50rb')" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 py-3 rounded-xl font-semibold transition mt-auto">Pilih Paket Ini</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Kategori 2: Administrasi Sekolah -->
+            <div>
+                <h3 class="text-2xl font-bold text-dark mb-6 flex items-center">
+                    <i class="fas fa-building text-primary mr-3"></i> Kategori 2: Administrasi Sekolah
+                </h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Akreditasi -->
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-secondary hover:shadow-lg transition">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-amber-100 text-amber-600 p-3 rounded-lg"><i class="fas fa-certificate text-xl"></i></div>
+                            <span class="bg-slate-100 text-slate-600 text-xs font-bold px-2 py-1 rounded">HOT</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-dark mb-2">Dokumen Akreditasi ISP 2024</h4>
+                        <p class="text-slate-500 text-sm mb-4">Contoh file dokumen kelengkapan instrumen akreditasi terbaru ISP 2024.</p>
+                        <p class="text-xs text-primary font-semibold mb-4"><i class="fas fa-gift mr-1"></i> Bonus: Perangkat Pembelajaran</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-extrabold text-primary">Rp 200rb</span>
+                            <a href="#pemesanan" onclick="selectProduct('Dokumen Akreditasi ISP 2024 + Bonus - Rp 200rb')" class="text-secondary hover:text-amber-700 font-bold"><i class="fas fa-cart-plus"></i> Pesan</a>
+                        </div>
+                    </div>
+
+                    <!-- Kepsek -->
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500 hover:shadow-lg transition">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-lg"><i class="fas fa-user-tie text-xl"></i></div>
+                        </div>
+                        <h4 class="text-lg font-bold text-dark mb-2">Dokumen Kepala Sekolah</h4>
+                        <p class="text-slate-500 text-sm mb-4">Kumpulan template surat, program kerja, supervisi, dan administrasi lengkap Kepala Sekolah.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-2xl font-extrabold text-primary">Rp 100rb</span>
+                            <a href="#pemesanan" onclick="selectProduct('Dokumen Kepala Sekolah - Rp 100rb')" class="text-blue-600 hover:text-blue-800 font-bold"><i class="fas fa-cart-plus"></i> Pesan</a>
+                        </div>
+                    </div>
+
+                    <!-- Aplikasi Rapor -->
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500 hover:shadow-lg transition">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-green-100 text-green-600 p-3 rounded-lg"><i class="fas fa-laptop-code text-xl"></i></div>
+                        </div>
+                        <h4 class="text-lg font-bold text-dark mb-2">Aplikasi Rapor Kurikulum</h4>
+                        <p class="text-slate-500 text-sm mb-4">Aplikasi format Excel dengan rumus otomatis untuk pengelolaan nilai siswa.</p>
+                        <p class="text-xs text-slate-500 mb-4">*Harga tertera per 1 jenjang tingkat.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-extrabold text-primary">Rp 50rb<span class="text-sm text-slate-500 font-normal">/jenjang</span></span>
+                            <a href="#pemesanan" onclick="selectProduct('Aplikasi Rapor (1 Jenjang) - Rp 50rb')" class="text-green-600 hover:text-green-800 font-bold"><i class="fas fa-cart-plus"></i> Pesan</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pemesanan -->
+    <section id="pemesanan" class="py-20 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+                <div class="md:flex">
+                    <!-- Kiri: Info -->
+                    <div class="md:w-5/12 bg-primary p-10 text-white flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-4">Pesan Sekarang</h2>
+                            <p class="text-blue-100 text-sm leading-relaxed mb-8">
+                                Isi formulir di samping untuk melakukan pemesanan. Pesanan Anda akan langsung diteruskan ke Admin WhatsApp kami untuk proses konfirmasi dan pembayaran.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center text-sm">
+                                    <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-blue-200 text-xs">WhatsApp Admin</p>
+                                        <p class="font-bold">0896-8759-6305</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center text-sm">
+                                    <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-blue-200 text-xs">Jam Operasional</p>
+                                        <p class="font-bold">24 Jam (Fast Respon)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center text-sm">
+                                    <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-file-zipper"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-blue-200 text-xs">Pengiriman File</p>
+                                        <p class="font-bold">Via Email / Link Google Drive</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 pt-8 border-t border-blue-800 text-center">
+                            <p class="text-sm font-semibold mb-3">Metode Pembayaran:</p>
+                            <div class="flex justify-center gap-3">
+                                <span class="bg-white text-dark px-3 py-1 rounded text-xs font-bold">BRI</span>
+                                <span class="bg-white text-dark px-3 py-1 rounded text-xs font-bold">BCA</span>
+                                <span class="bg-white text-dark px-3 py-1 rounded text-xs font-bold">DANA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Kanan: Form -->
+                    <div class="md:w-7/12 p-10">
+                        <form id="orderForm" onsubmit="kirimWhatsApp(event)" class="space-y-5">
+                            <div>
+                                <label for="nama" class="block text-sm font-semibold text-slate-700 mb-1">Nama Lengkap / Guru <span class="text-red-500">*</span></label>
+                                <input type="text" id="nama" required placeholder="Contoh: Budi Santoso, S.Pd" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary transition outline-none bg-slate-50">
+                            </div>
+                            
+                            <div>
+                                <label for="sekolah" class="block text-sm font-semibold text-slate-700 mb-1">Asal Sekolah <span class="text-red-500">*</span></label>
+                                <input type="text" id="sekolah" required placeholder="Contoh: SMP Negeri 1 Jakarta" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary transition outline-none bg-slate-50">
+                            </div>
+                            
+                            <div>
+                                <label for="produk_utama" class="block text-sm font-semibold text-slate-700 mb-1">Pilih Produk Utama <span class="text-red-500">*</span></label>
+                                <select id="produk_utama" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary transition outline-none bg-slate-50 appearance-none">
+                                    <option value="" disabled selected>-- Silakan Pilih Produk --</option>
+                                    <optgroup label="Perangkat Ajar">
+                                        <option value="Pack 1 (Semua Jenjang + Bonus) - Rp 200rb">Pack 1 (Semua Jenjang + Bonus) - Rp 200.000</option>
+                                        <option value="Pack 2 (SMP/MTs/SMA/MA) - Rp 100rb">Pack 2 (SMP/MTs/SMA/MA) - Rp 100.000</option>
+                                        <option value="Pack 3 (SD/MI) - Rp 50rb">Pack 3 (SD/MI) - Rp 50.000</option>
+                                    </optgroup>
+                                    <optgroup label="Dokumen Administrasi">
+                                        <option value="Dokumen Akreditasi ISP 2024 + Bonus - Rp 200rb">Dokumen Akreditasi ISP 2024 - Rp 200.000</option>
+                                        <option value="Dokumen Kepala Sekolah - Rp 100rb">Dokumen Kepala Sekolah - Rp 100.000</option>
+                                        <option value="Aplikasi Rapor (1 Jenjang) - Rp 50rb">Aplikasi Rapor - Rp 50.000 / Jenjang</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="catatan" class="block text-sm font-semibold text-slate-700 mb-1">Catatan Tambahan / Produk Lain</label>
+                                <textarea id="catatan" rows="3" placeholder="Sebutkan jika ada tambahan pesanan lain, atau rincian jenjang untuk aplikasi rapor..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary transition outline-none bg-slate-50 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-green-500/30 flex items-center justify-center text-lg mt-4">
+                                <i class="fab fa-whatsapp text-2xl mr-2"></i> Kirim Pesanan via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative bg -->
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-slate-50 z-0"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-lg mr-2">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="font-bold text-2xl text-white">SahabatGuru<span class="text-secondary">.shop</span></span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                        Mitra terpercaya pendidik Indonesia dalam menyediakan kebutuhan perangkat ajar dan administrasi sekolah yang lengkap, murah, dan sesuai standar kurikulum terbaru.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-lg">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="hover:text-white transition"><i class="fas fa-chevron-right text-xs text-primary mr-2"></i> Beranda</a></li>
+                        <li><a href="#keunggulan" class="hover:text-white transition"><i class="fas fa-chevron-right text-xs text-primary mr-2"></i> Keunggulan</a></li>
+                        <li><a href="#produk" class="hover:text-white transition"><i class="fas fa-chevron-right text-xs text-primary mr-2"></i> Katalog Produk</a></li>
+                        <li><a href="#pemesanan" class="hover:text-white transition"><i class="fas fa-chevron-right text-xs text-primary mr-2"></i> Cara Pesan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-lg">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 text-green-500 mr-3 text-lg"></i>
+                            <div>
+                                <p class="text-white">0896-8759-6305</p>
+                                <p class="text-xs text-slate-500">Senin - Minggu (24 Jam)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3 text-lg"></i>
+                            <span class="text-white">admin@sahabatguru.shop</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 mt-10 pt-8 text-center text-sm text-slate-500">
+                <p>&copy; 2024 SahabatGuru.shop. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Fungsi untuk Auto-Select produk dari tombol "Pilih Paket Ini" di Card
+        function selectProduct(productValue) {
+            const selectElement = document.getElementById('produk_utama');
+            // Pastikan nilai value sama persis di option select
+            for(let i=0; i < selectElement.options.length; i++) {
+                if(selectElement.options[i].value === productValue) {
+                    selectElement.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Fungsi Format dan Kirim ke WhatsApp
+        function kirimWhatsApp(event) {
+            event.preventDefault(); // Mencegah form reload page
+            
+            // Ambil data dari form
+            const nama = document.getElementById('nama').value.trim();
+            const sekolah = document.getElementById('sekolah').value.trim();
+            const produkUtama = document.getElementById('produk_utama').value;
+            const catatan = document.getElementById('catatan').value.trim();
+
+            // Validasi sederhana (meskipun HTML5 required sudah jalan)
+            if(!nama || !sekolah || !produkUtama) {
+                alert('Mohon lengkapi Nama, Sekolah, dan Produk Utama.');
+                return;
+            }
+
+            // Nomor Tujuan (Format Internasional Indonesia 62)
+            // Dari 089687596305 menjadi 6289687596305
+            const phone = "6289687596305"; 
+
+            // Susun Format Pesan WhatsApp
+            let textMessage = `Halo Admin *SahabatGuru.shop*,\nSaya ingin melakukan pemesanan dokumen:\n\n`;
+            textMessage += `*Nama:* ${nama}\n`;
+            textMessage += `*Asal Sekolah:* ${sekolah}\n`;
+            textMessage += `*Produk Utama:* ${produkUtama}\n`;
+            
+            if (catatan !== "") {
+                textMessage += `*Catatan / Tambahan:* ${catatan}\n`;
+            }
+            
+            textMessage += `\nMohon informasi ketersediaan dan rincian pembayarannya. Terima kasih!`;
+
+            // Encode text untuk URL (mengubah spasi menjadi %20, enter jadi %0A, dll)
+            const encodedText = encodeURIComponent(textMessage);
+
+            // Buat Link WA API
+            const waLink = `https://wa.me/${phone}?text=${encodedText}`;
+
+            // Buka tab baru ke WhatsApp
+            window.open(waLink, '_blank');
+        }
+    </script>
+</body>
+</html>
